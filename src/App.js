@@ -11,13 +11,6 @@ import './app.css';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavItem from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Tabbing from './Components/Tabbing';
-import Main from './Views/MainPage';
-import About from './Views/About';
-import NavbarBrand from 'react-bootstrap/NavbarBrand';
-import Blog from './Views/Blog';
 import Carousel from 'react-bootstrap/Carousel';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
@@ -344,7 +337,7 @@ const topics = [
                   <script>{injectGA()}</script>
                 </header>
                 <Navbar bg="green" expand="lg">
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand href="/vizumo-site/">
                     <img
                       alt=""
                       src={require('./tri.png')}
