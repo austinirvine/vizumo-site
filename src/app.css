@@ -1,8 +1,8 @@
 
 body {
     /* background-image: url(./whale.jpg); */
-    color: rgb(0, 0, 0);
-    background-color: rgb(2, 2, 2);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     background: black;
     font: "Roboto";
     /* background-repeat: no-repeat; */
@@ -10,7 +10,51 @@ body {
     /* background-position: center;  */
 }
 
-/* center {
+biggestText {
+    display:block;
+    margin:0;
+    padding:0;
+    border:0;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    font-size: 32pt;
+}
+
+biggestTextW {
+    display:block;
+    margin:0;
+    padding:0;
+    border:0;
     color: rgb(0, 0, 0);
-    font: "Roboto";
-} */
+    font-size: 32pt;
+}
+
+medText {
+    display:block;
+    margin:0;
+    padding:0;
+    border:0;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    font-size: 16pt;
+}
+
+botTag {
+    display:block;
+    margin:0;
+    padding:0;
+    border:0;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    font-size: 12pt;
+}
+
+botTagLinked {
+    display:block;
+    margin:0;
+    padding:0;
+    border:0;
+    color: rgb(255, 221, 109);
+    background: rgb(0, 0, 0);
+    font-size: 10pt;
+}

@@ -5,7 +5,6 @@ import {
     Link, 
     Route} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-import Table from './Table';
 import Form from './Form';
 import './app.css';
 
