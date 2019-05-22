@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vizumo-site/precache-manifest.cf4cd840fa5c8eb7508bf31eabb10353.js"
+  "/vizumo-site/precache-manifest.fe0c96d5f7b9cfb93d2ef3a8f8a48af6.js"
 );
 
 workbox.clientsClaim();
