@@ -18,6 +18,14 @@ import Main from './Views/MainPage';
 import About from './Views/About';
 import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import Blog from './Views/Blog';
+import Carousel from 'react-bootstrap/Carousel';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 const injectGA = () => {
   if (typeof window == 'undefined') {
@@ -107,24 +115,218 @@ const topics = [
   
   function Splash () {
     return (
+      <rTag>
       <h1>
-            <center>
-              <p2>
-              Vizumo Virtual Reality Tours
-              </p2>
+          <center id="home">
+          <Container>
+                <Image src={require('./Vizumo.png')} fluid />
+          </Container>
+            <br></br>
+            <br></br>
+            <br></br>
+            <form action="#info">
+              <Button variant="dark" size="lg" type="submit">   ▾   </Button>
+            </form>
+            <br></br>
+          </center>
+          
+          <center id="info">
+            <Jumbotron>
+              <biggestTextW>
+                Our Mission
+              </biggestTextW>
               <br></br>
               <p2>
-                Pioneering the Way You Looks At Homes
+                Vizumo is a software company with the goal of accelerating and enhancing 
+                the home buying experience.
               </p2>
-            </center>
-          
+              <br></br>
+              <br></br>
+              <p2>
+                <form action="#concept">
+                  <Button variant="dark" size="lg" type="submit">Learn more</Button>
+                </form>
+              </p2>
+            </Jumbotron>
 
-          <body>
-            <p2>
-              
-            </p2>
-          </body>
+            <Carousel id="photos">
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={require("./homes/modern_home.jpg")}
+                  alt="First slide"
+                />
+                <Carousel.Caption>
+                  {/* <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={require("./homes/modern_interior.jpg")}
+                  //src="holder.js/800x400?text=Second slide&bg=282c34"
+                  alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                  {/* <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100"
+                  src={require("./homes/small_house.jpg")}
+                  //src="holder.js/800x400?text=Third slide&bg=20232a"
+                  alt="Third slide"
+                />
+
+                <Carousel.Caption>
+                  {/* <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+            <br></br>
+          </center>
+
+          <center id="concept">
+            <Jumbotron>
+              <biggestTextW>
+                Concept
+              </biggestTextW>
+              <br></br>
+              <CardColumns>
+                <Card>
+                  <Card.Img variant="top" src={require("./homes/nice_interior.jpg")} />
+                  <Card.Body>
+                    <Card.Title>Listing Agent</Card.Title>
+                    <Card.Text>
+                      This card has supporting text below as a natural lead-in to additional
+                      content.{' '}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card className="p-3">
+                  <blockquote className="blockquote mb-0 card-body">
+                    <p>
+                      “Home isn't where you're from, it's where you find light when all grows dark.” 
+                    </p>
+                    <footer className="blockquote-footer">
+                      <small className="text-muted">
+                        Pierce Brown<cite title="Source Title">Golden Son</cite>
+                      </small>
+                    </footer>
+                  </blockquote>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src={require("./homes/walkway.jpg")} />
+                  <Card.Body>
+                    <Card.Title>Buying Agent</Card.Title>
+                    <Card.Text>
+                      This card has supporting text below as a natural lead-in to additional
+                      content.{' '}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card className="text-center">
+                  <Card.Body>
+                    <Card.Title>Competitors</Card.Title>
+                    <Card.Text>
+                      This card has supporting text below as a natural lead-in to additional
+                      content.{' '}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Img src={require("./homes/happy_realtor.png")} />
+                  <Card.Body>
+                    <Card.Title>Home Buyers</Card.Title>
+                    <Card.Text>
+                      This card has supporting text below as a natural lead-in to additional
+                      content.{' '}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+                <Card>
+                  <Card.Body>
+                    <Card.Title>Advantages</Card.Title>
+                    <Card.Text>
+                      This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This card has even longer content than the first to
+                      show that equal height action.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </CardColumns>
+              <br></br>
+              <p2>
+                <form action="#team">
+                  <Button variant="dark" size="lg" type="submit">Our Team</Button>
+                </form>
+              </p2>
+            </Jumbotron>
+          </center>
+
+          <center id="team">
+            <biggestText>
+              Our Team
+            </biggestText>
+            <br></br>
+            <Container>
+              <Row>
+                <Col xs={12} md={4}>
+                  <Image src={require("./people/sim.png")} fluid />
+                  <medText class="caption center-block">Simeon, CEO</medText>
+                </Col>
+                <Col xs={12} md={4}>
+                  <Image src={require("./people/noosh.png")} fluid />
+                  <medText class="caption center-block">Nooshin, COO</medText>
+                </Col>
+                <Col xs={12} md={4}>
+                  <Image src={require("./people/aus.png")} fluid />
+                  <medText class="caption center-block">Austin, CTO</medText>
+                </Col>
+              </Row>
+            </Container>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+          </center>
       </h1>
+
+      <center id="table-of-contents">
+        <Container>
+          <botTag>
+            <Row>
+              <Col>Content</Col>
+              <Col xs={4}>Contact</Col>
+              <Col>Resources</Col>
+            </Row>
+          </botTag>
+          <botTagLinked>
+            <Row>
+              <Col><a href="#home">Home</a></Col>
+              <Col xs={4}><a href="https://www.linkedin.com/in/simeon-bowman-75a252141/">Simeon</a></Col>
+              <Col>-</Col>
+            </Row>
+            <Row>
+              <Col><a href="#info">Mission</a></Col>
+              <Col xs={4}><a href="https://www.linkedin.com/in/nooshin-shahlari/">Nooshin</a></Col>
+              <Col>-</Col>
+            </Row>
+            <Row>
+              <Col><a href="#concept">About</a></Col>
+              <Col xs={4}><a href="https://www.linkedin.com/in/austinirvine/">Austin</a></Col>
+              <Col>-</Col>
+            </Row>
+          </botTagLinked>
+        </Container>
+        <br></br>
+      </center>
+      </rTag>
     )
   }
   
@@ -150,7 +352,6 @@ const topics = [
                       height="60"
                       className="d-inline-block align-center"
                     />
-                      {' Vizumo '}
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
