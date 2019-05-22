@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "54a375984524248667a5",
-    "url": "/vizumo-site/static/css/main.52114004.chunk.css"
+    "revision": "7be6da26440c273d4132",
+    "url": "/vizumo-site/static/css/main.6e59c7f7.chunk.css"
   },
   {
-    "revision": "54a375984524248667a5",
-    "url": "/vizumo-site/static/js/main.1fc8bda2.chunk.js"
+    "revision": "7be6da26440c273d4132",
+    "url": "/vizumo-site/static/js/main.ca72bdea.chunk.js"
   },
   {
     "revision": "2b4ebfd066e8b521a132",
     "url": "/vizumo-site/static/js/runtime~main.5c6fe940.js"
   },
   {
-    "revision": "33b5fe02f5a38c93900e",
-    "url": "/vizumo-site/static/js/2.fc0168e5.chunk.js"
+    "revision": "8b05aa15154b00bddc64",
+    "url": "/vizumo-site/static/js/2.cfca14d4.chunk.js"
   },
   {
     "revision": "a7a66710318c196806dcda548fabde3f",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/vizumo-site/static/media/tri.86b6aeba.png"
   },
   {
-    "revision": "1a8ba98f9df825bd9486cfcef35a8105",
+    "revision": "8742584479717a77c8925ed556f68845",
     "url": "/vizumo-site/index.html"
   }
 ];
