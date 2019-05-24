@@ -301,7 +301,7 @@ const topics = [
           <botTagLinked>
             <Row>
               <Col><a href="#home">Home</a></Col>
-              <Col xs={4}><a href="https://www.linkedin.com/in/simeon-bowman-75a252141/">Simeon</a></Col>
+              <Col xs={4}><a href="https://www.linkedin.com/in/simeon-bowman/">Simeon</a></Col>
               <Col>-</Col>
             </Row>
             <Row>
