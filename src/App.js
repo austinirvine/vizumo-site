@@ -325,7 +325,7 @@ const topics = [
   class App extends Component {
     render() {
       return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="app">
                 <header>
                   {/* Global site tag (gtag.js) - Google Analytics */}
@@ -336,7 +336,7 @@ const topics = [
                   <script>{injectGA()}</script>
                 </header>
                 <Navbar bg="green" expand="lg">
-                    <Navbar.Brand href="/">
+                    <Navbar.Brand href="/vizumo-site/">
                     <img
                       alt=""
                       src={require('./tri.png')}
