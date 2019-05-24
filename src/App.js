@@ -336,7 +336,7 @@ const topics = [
                   <script>{injectGA()}</script>
                 </header>
                 <Navbar bg="green" expand="lg">
-                    <Navbar.Brand href="/vizumo-site/">
+                    <Navbar.Brand href="/">
                     <img
                       alt=""
                       src={require('./tri.png')}
