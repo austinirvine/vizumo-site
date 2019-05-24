@@ -325,7 +325,7 @@ const topics = [
   class App extends Component {
     render() {
       return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div className="app">
                 <header>
                   {/* Global site tag (gtag.js) - Google Analytics */}
