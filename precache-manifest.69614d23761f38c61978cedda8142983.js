@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d63d18f174a22d5bb826",
+    "revision": "97373a8e35e055ae773c",
     "url": "/vizumo-site/static/css/main.28713950.chunk.css"
   },
   {
-    "revision": "d63d18f174a22d5bb826",
-    "url": "/vizumo-site/static/js/main.931764a6.chunk.js"
+    "revision": "97373a8e35e055ae773c",
+    "url": "/vizumo-site/static/js/main.cef8a91d.chunk.js"
   },
   {
     "revision": "2b4ebfd066e8b521a132",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/vizumo-site/static/media/tri.86b6aeba.png"
   },
   {
-    "revision": "93c17577cc0ae490dda01500dabd38d1",
+    "revision": "f03d55f080c341e0f5a8c6dd61a390ff",
     "url": "/vizumo-site/index.html"
   }
 ];
