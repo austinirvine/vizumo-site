@@ -1,7 +1,7 @@
 {
   "name": "vizumo-site",
   "version": "0.1.0",
-  "homepage": "http://austinirvine.github.io/vizumo-site",
+  "homepage": "http://austinirvine.github.io/",
   "private": true,
   "dependencies": {
     "create-react-class": "^15.6.3",
